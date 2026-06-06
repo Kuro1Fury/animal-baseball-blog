@@ -31,7 +31,7 @@ features:
 
 ## 当前项目状态
 
-> 最后同步：2026-06-07（commit `28658e7`）
+> 最后同步：2026-06-07（commit `d47fa6a`）
 
 | 系统 | 状态 |
 |------|------|
@@ -48,8 +48,9 @@ features:
 | Strike / Out 计数 + 半局结束 | ✅ 完成 |
 | 垒位占用状态（1B / 2B）| ✅ 完成 |
 | 一垒→二垒推进原型 | 🔧 MVP（无回垒规则）|
-| 训练场景（F10 菜单）| ✅ 完成 |
-| 调试可视化（F1-F5）| ✅ 完成 |
+| 训练场景（F10 菜单，Setup/Debug 双 Tab）| ✅ 完成 |
+| 调试可视化（F1-F5，可在 Debug Tab 切换）| ✅ 完成 |
+| Hit Type / Direction Override（调试强制覆盖）| ✅ 完成 |
 
 ## 两条并行轨道
 
@@ -101,6 +102,7 @@ features:
 
 ## 最近进展（2026-06-07）
 
+- `d47fa6a` Training Menu 升级为 Setup/Debug 双 Tab：6 个调试开关 CheckBox + Hit Type/Direction Override OptionButton
 - `28658e7` 训练场景菜单（F10）：可设置 Strike/Out 数和垒位状态
 - `8f6aae1` 实现一垒→二垒推进原型（MVP，不含回垒逻辑）
 - `aab5bf7` Throw UX Polish：持球时动态显示可传球目标列表

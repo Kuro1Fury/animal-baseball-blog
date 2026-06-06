@@ -33,7 +33,7 @@ export default defineConfig({
             { text: '2026-05-30 — 动物系统、守备、场地、跑垒', link: '/devlog/2026-05-30-animals-fielding' },
             { text: '2026-06-03/04 — Strike/Out、垒位占用', link: '/devlog/2026-06-03-04-rules' },
             { text: '2026-06-05/06 — 传球系统、Numpad、二垒推进', link: '/devlog/2026-06-05-06-throwing' },
-            { text: '2026-06-07 — 训练场景菜单（F10）', link: '/devlog/2026-06-07-training-menu' },
+            { text: '2026-06-07 — 训练菜单 + 调试控制面板', link: '/devlog/2026-06-07-training-menu' },
           ]
         }
       ],
