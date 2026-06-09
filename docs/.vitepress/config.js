@@ -34,6 +34,8 @@ export default defineConfig({
             { text: '2026-06-03/04 — Strike/Out、垒位占用', link: '/devlog/2026-06-03-04-rules' },
             { text: '2026-06-05/06 — 传球系统、Numpad、二垒推进', link: '/devlog/2026-06-05-06-throwing' },
             { text: '2026-06-07 — 训练菜单 + 调试控制面板', link: '/devlog/2026-06-07-training-menu' },
+            { text: '2026-06-07 — 传二垒封杀（Force Out at Second）', link: '/devlog/2026-06-07-force-out-2b' },
+            { text: '2026-06-09 — 手动确认下一球 & 多结果 Play', link: '/devlog/2026-06-09-manual-play-multiresult' },
           ]
         }
       ],
