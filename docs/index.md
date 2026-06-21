@@ -31,7 +31,7 @@ features:
 
 ## 当前项目状态
 
-> 最后同步：2026-06-09（commit `5d5f53b`）
+> 最后同步：2026-06-21（commit `a8a21d5`）
 
 | 系统 | 状态 |
 |------|------|
@@ -48,8 +48,13 @@ features:
 | Strike / Out 计数 + 半局结束 | ✅ 完成 |
 | 垒位占用状态（1B / 2B）| ✅ 完成 |
 | 一垒→二垒推进 + Force Out at 2B | ✅ 完成 |
-| 飞球接杀 Runner1B 回垒 | ✅ 完成（MVP，无 tag up）|
-| Multi-Result Play（双跑者结果合并展示）| ✅ 完成 |
+| 二垒→三垒推进 + Force Out at 3B | ✅ 完成 |
+| 三垒→本垒得分（offense_score）| ✅ 完成 |
+| 飞球接杀所有跑者回原垒 | ✅ 完成（MVP，无 tag up）|
+| Multi-Result Play（最多 4 条结果合并展示）| ✅ 完成 |
+| 双杀（Double Play）| ✅ 完成 |
+| Force Chain Continuation（踩垒后续传）| ✅ 完成 |
+| 弧线传球（Arc Throw + 弹跳地滚）| ✅ 完成 |
 | 手动确认下一球（Space/A）| ✅ 完成 |
 | 训练场景（F10 菜单，Setup/Debug 双 Tab）| ✅ 完成 |
 | 调试可视化（F1-F5，可在 Debug Tab 切换）| ✅ 完成 |
@@ -103,12 +108,14 @@ features:
 4. **[击球判定系统](/code-reading/batting_controller)** — 时机窗口的数学逻辑
 5. **[game_director.gd](/code-reading/game_director)** — 游戏总控：信号 + 状态机的综合运用
 
-## 最近进展（2026-06-09）
+## 最近进展（2026-06-21）
 
-- `5d5f53b` Multi-Result Play v0.1：双跑者结果合并展示，飞球接杀 Runner1B 自动回垒
-- `f9f8a0e` Manual Next Play：所有结果改为 Space/A 手动确认，Path A2 解除 SS 踩垒限制
-- `6502f5c` Force Out at Second v0.1：持球守备员走到二垒可封杀推进中的 Runner1B
-- `d47fa6a` Training Menu 升级为 Setup/Debug 双 Tab：6 个调试开关 + Hit Type/Direction Override
+- `a8a21d5` / `06f0e87` 三垒/计分回归 Bug 修复
+- `5cd8a0f` 3B/Home/Scoring Step 3：三垒封杀（Force at 3B）+ 链式续传
+- `e42f2c1` 3B/Home/Scoring Step 2：强迫推进链延伸到三垒 + 本垒得分
+- `84a48d8` 3B/Home/Scoring Step 1：场景节点 + 状态变量基础
+- `c6e571b` Double Play v0.1：基于 Multi-Result Play 实现，零新增状态
+- `e8f539c` Arc Throw + Simple Bounce/Roll：传球弧线物理 + 弹跳地滚
 - `8f6aae1` 实现一垒→二垒推进原型（MVP，不含回垒逻辑）
 - `aab5bf7` Throw UX Polish：持球时动态显示可传球目标列表
 - `a50797b` Numpad 1-9 按守备编号传球，控制权自动转移到接球者

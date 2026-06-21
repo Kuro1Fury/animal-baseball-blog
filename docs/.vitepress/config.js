@@ -36,6 +36,9 @@ export default defineConfig({
             { text: '2026-06-07 — 训练菜单 + 调试控制面板', link: '/devlog/2026-06-07-training-menu' },
             { text: '2026-06-07 — 传二垒封杀（Force Out at Second）', link: '/devlog/2026-06-07-force-out-2b' },
             { text: '2026-06-09 — 手动确认下一球 & 多结果 Play', link: '/devlog/2026-06-09-manual-play-multiresult' },
+            { text: '2026-06-11 — 双杀（Double Play）', link: '/devlog/2026-06-11-double-play' },
+            { text: '2026-06-12 — 弧线传球（Arc Throw）', link: '/devlog/2026-06-12-arc-throw' },
+            { text: '2026-06-21 — 三垒、得分与强迫推进链', link: '/devlog/2026-06-21-3b-scoring' },
           ]
         }
       ],
@@ -103,6 +106,7 @@ export default defineConfig({
             { text: 'signal 信号系统', link: '/godot-notes/signals' },
             { text: '2D 坐标系与 Vector2', link: '/godot-notes/2d-coordinate-system' },
             { text: 'Line2D / Polygon2D 程序化绘图', link: '/godot-notes/line2d-polygon2d' },
+            { text: '手动斜抛物理 — 不用 RigidBody2D 的原因', link: '/godot-notes/projectile-physics' },
           ]
         }
       ],
